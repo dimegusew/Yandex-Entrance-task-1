@@ -103,7 +103,7 @@ events (root, args, context) {
     return models.Event.findAll(argumets, context);
   },
 ```
-Аргументом в events передает arg а возвращает метод findAll c аргументом arguments
+Аргументом в events передает arg, а возвращает метод findAll c аргументом arguments
 При изменении arguments на args ошибка пропадает
 
 При проверке всех mutations было выявлено, что отсутствует запрос addUserToEvent указанный в Doc
@@ -125,7 +125,7 @@ events (root, args, context) {
 Но при запросе events users и room равны null
 
 Используя средство для просмотра баз данных (в данном случае использовался sqlite browser https://sqliteonline.com/#
-Понимаем, что запись прошла успешно значит проблема не в записи а в запросе из базы данных.
+Понимаем, что запись прошла успешно, значит проблема не в записи, а в запросе из базы данных.
 
 Находим что в \graphql\resolvers\index.js функции users и room ничего не возвращают.
 
